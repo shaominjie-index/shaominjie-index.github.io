@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>手撸一个mybatis | 个人主页</title>
+    <meta name="description" content="邵先生的博客">
+    <link rel="icon" href="/img/logo.ico">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    
+    <link rel="preload" href="/assets/css/0.styles.3ec494d7.css" as="style"><link rel="preload" href="/assets/js/app.fe2b8134.js" as="script"><link rel="preload" href="/assets/js/2.fd8391b5.js" as="script"><link rel="preload" href="/assets/js/7.70799840.js" as="script"><link rel="prefetch" href="/assets/js/10.50f4169a.js"><link rel="prefetch" href="/assets/js/11.7aa273fa.js"><link rel="prefetch" href="/assets/js/12.b3564371.js"><link rel="prefetch" href="/assets/js/13.45a09c17.js"><link rel="prefetch" href="/assets/js/14.63800a46.js"><link rel="prefetch" href="/assets/js/15.60455771.js"><link rel="prefetch" href="/assets/js/16.c16c9f53.js"><link rel="prefetch" href="/assets/js/3.faaf71ed.js"><link rel="prefetch" href="/assets/js/4.60dcc79e.js"><link rel="prefetch" href="/assets/js/5.f11d9f09.js"><link rel="prefetch" href="/assets/js/6.7833f9c9.js"><link rel="prefetch" href="/assets/js/8.571ba1ed.js"><link rel="prefetch" href="/assets/js/9.aa40008f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3ec494d7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/" class="nav-link router-link-active">后端</a></li><li class="dropdown-item"><!----> <a href="/frontend/" class="nav-link">前端</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">工具</a></li></ul></div></div><div class="nav-item"><a href="/ide/" class="nav-link">工具</a></div><div class="nav-item"><a href="https://github.com/shaominjie-index" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="博文" class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/" class="nav-link router-link-active">后端</a></li><li class="dropdown-item"><!----> <a href="/frontend/" class="nav-link">前端</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">工具</a></li></ul></div></div><div class="nav-item"><a href="/ide/" class="nav-link">工具</a></div><div class="nav-item"><a href="https://github.com/shaominjie-index" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JAVA源码学习</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend/mybatis.html" class="active sidebar-link">mybatis学习</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_1-准备工作" class="sidebar-link">1. 准备工作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_1-1-工具-环境" class="sidebar-link">1.1.工具&amp;环境</a></li><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_1-2-基础配置" class="sidebar-link">1.2.基础配置</a></li><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_1-3-总结下" class="sidebar-link">1.3. 总结下</a></li></ul></li><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_2-实现" class="sidebar-link">2. 实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_2-1-最简单的jdbc实现" class="sidebar-link">2.1. 最简单的jdbc实现</a></li></ul></li><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_2-2-源码分析" class="sidebar-link">2.2.源码分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_2-2-1整体了解结构（参考前辈们，减少支出，减少错误1）" class="sidebar-link">2.2.1整体了解结构（参考前辈们，减少支出，减少错误1）</a></li><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_2-2-2整体模型" class="sidebar-link">2.2.2整体模型</a></li><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_2-2-3-接口层" class="sidebar-link">2.2.3 接口层</a></li><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_2-2-4-核心处理层" class="sidebar-link">2.2.4 核心处理层</a></li><li class="sidebar-sub-header"><a href="/backend/mybatis.html#_2-2-5-基础支持层" class="sidebar-link">2.2.5 基础支持层</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>spring</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend/spring.html" class="sidebar-link">spring学习</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="手撸一个mybatis"><a href="#手撸一个mybatis" class="header-anchor">#</a> 手撸一个mybatis</h1> <h2 id="_1-准备工作"><a href="#_1-准备工作" class="header-anchor">#</a> 1. 准备工作</h2> <h3 id="_1-1-工具-环境"><a href="#_1-1-工具-环境" class="header-anchor">#</a> 1.1.工具&amp;环境</h3> <p>环境    ：IDEA：2019.3.1</p> <p>数据库：mysql：8.0.18</p> <p>JDK     ：java12</p> <h3 id="_1-2-基础配置"><a href="#_1-2-基础配置" class="header-anchor">#</a> 1.2.基础配置</h3> <p>使用idea的Database作为数据库连接工具</p> <p><img src="D:%5CINDEX_SHAO%5Cvuepress%5Cdocs.vuepress%5Cdist%5Cimg%5Cmybatis%5Cmybatis-idea-datasource%E9%85%8D%E7%BD%AE.png" alt="1578238165274"></p> <p>ps：数据库刚安装的时候会提示</p> <p><font color="red">“<strong>Server returns invalid timezone. Go to 'Advanced' tab and set 'serverTimezone' property manually.</strong>”</font></p> <p>=&gt;翻译过来的意思：服务器返回无效时区。进入“高级”选项卡，手动设置“serverTimezone”属性。</p> <p>问题原因：MySQL默认的时区应该是0时区，比北京时间晚<code>8</code>个小时（这里直接设置了时区，忘了查看了，具体查看当前时区可以用命令*<font color="blue">SELECT @@global.time_zone;</font>*）</p> <div class="language-mysql extra-class"><pre class="language-text"><code>mysql&gt; SELECT @@global.time_zone;
++--------------------+
+| @@global.time_zone |
++--------------------+
+| +08:00             |
++--------------------+
+1 row in set (0.00 sec)
+</code></pre></div><p>发现和当期时区不符的时候使用命令修改*<font color="blue">set global time_zone ='+8:00';</font>*</p> <div class="language-mysql extra-class"><pre class="language-text"><code>mysql&gt; set global time_zone ='+8:00';
+Query OK, 0 rows affected (0.00 sec)
+</code></pre></div><p>然后按上图配置数据库连接。</p> <p>创建数据库并且创建数据库表</p> <p><img src="C:%5CUsers%5Cindex%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1578239467503.png" alt="1578239467503"></p> <div class="language-mysql extra-class"><pre class="language-text"><code>-- 新建个测试库
+create database db_test;
+-- 查看下数据库
+show databases ;、
+-- 使用测试库
+use db_test;
+-- 创建用户信息表
+create table sys_user
+(
+    user_id     long auto_increment comment '用户ID' primary key,
+    login_name  varchar(30)               not null comment '登录账号',
+    user_name   varchar(30)               not null comment '用户昵称',
+    user_type   varchar(2)   default '00' null comment '用户类型（00系统用户）',
+    email       varchar(50)  default ''   null comment '用户邮箱',
+    phone_num   varchar(11)  default ''   null comment '手机号码',
+    sex         char         default '0'  null comment '用户性别（0男 1女 2未知）',
+    avatar      varchar(100) default ''   null comment '头像路径',
+    password    varchar(50)  default ''   null comment '密码',
+    salt        varchar(20)  default ''   null comment '盐加密',
+    status      char         default '0'  null comment '帐号状态（0正常 1停用）',
+    del_flag    char         default '0'  null comment '删除标志（0代表存在 2代表删除）',
+    login_ip    varchar(50)  default ''   null comment '最后登陆IP',
+    login_date  datetime                  null comment '最后登陆时间',
+    create_by   varchar(64)  default ''   null comment '创建者',
+    create_time datetime                  null comment '创建时间',
+    update_by   varchar(64)  default ''   null comment '更新者',
+    update_time datetime                  null comment '更新时间',
+    remark      varchar(500)              null comment '备注'
+)
+    comment '用户信息表';
+
+</code></pre></div><h3 id="_1-3-总结下"><a href="#_1-3-总结下" class="header-anchor">#</a> 1.3. 总结下</h3> <p>​	这里就没啥好说的了就搭建个环境，一般的话我都是用的云上服务器，但是买的阿里云太小了就不用了，测试练习用下。</p> <p>​	关于mysql的运用和idea的应用以后慢慢补充~</p> <h2 id="_2-实现"><a href="#_2-实现" class="header-anchor">#</a> 2. 实现</h2> <h3 id="_2-1-最简单的jdbc实现"><a href="#_2-1-最简单的jdbc实现" class="header-anchor">#</a> 2.1. 最简单的jdbc实现</h3> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">package</span> simpleJDBC<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>sql</span><span class="token punctuation">.</span><span class="token class-name">Connection</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>sql</span><span class="token punctuation">.</span><span class="token class-name">DriverManager</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>sql</span><span class="token punctuation">.</span><span class="token class-name">ResultSet</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>sql</span><span class="token punctuation">.</span><span class="token class-name">Statement</span><span class="token punctuation">;</span>
+<span class="token comment">/** 
+* V1.0
+* @author : index_shao 
+* @date : 2020/1/5 
+*/</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">JdbcConnection</span> <span class="token punctuation">{</span>    
+	<span class="token comment">/**     
+	* 数据库地址     
+	*/</span>    
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> URL <span class="token operator">=</span> <span class="token string">&quot;jdbc:mysql://localhost:3306/db_test&quot;</span><span class="token punctuation">;</span>    
+	<span class="token comment">/**     * 数据库帐号     */</span>    
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> USER <span class="token operator">=</span> <span class="token string">&quot;root&quot;</span><span class="token punctuation">;</span>    
+	<span class="token comment">/**     * 数据库密码     */</span>    
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> PASSWORD <span class="token operator">=</span> <span class="token string">&quot;123456&quot;</span><span class="token punctuation">;</span>    
+	<span class="token comment">/**     * 驱动程序名称     */</span>    
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> DRIVER_CLASS <span class="token operator">=</span> <span class="token string">&quot;com.mysql.cj.jdbc.Driver&quot;</span><span class="token punctuation">;</span>    
+	<span class="token comment">/**     * 执行sql     */</span>    
+	<span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> SQL <span class="token operator">=</span> <span class="token string">&quot;select * from sys_user where user_id='1';&quot;</span><span class="token punctuation">;</span> 
+    
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    	<span class="token keyword">try</span> <span class="token punctuation">{</span>
+    		<span class="token function">getInFromJdbc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        
+    	<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   			e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        
+    	<span class="token punctuation">}</span>    
+    <span class="token punctuation">}</span>    
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">getInFromJdbc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span><span class="token punctuation">{</span>
+    	<span class="token comment">//1.加载{mysql}驱动程序       </span>
+    	<span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span>DRIVER_CLASS<span class="token punctuation">)</span><span class="token punctuation">;</span>        
+    	<span class="token comment">//2. 获得数据库连接        </span>
+    	<span class="token class-name">Connection</span> conn <span class="token operator">=</span> <span class="token class-name">DriverManager</span><span class="token punctuation">.</span><span class="token function">getConnection</span><span class="token punctuation">(</span>URL<span class="token punctuation">,</span> USER<span class="token punctuation">,</span> PASSWORD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    	<span class="token comment">//3.操作数据库，实现增删改查        </span>
+    	<span class="token class-name">Statement</span> stmt <span class="token operator">=</span> conn<span class="token punctuation">.</span><span class="token function">createStatement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+        <span class="token class-name">ResultSet</span> rs <span class="token operator">=</span> stmt<span class="token punctuation">.</span><span class="token function">executeQuery</span><span class="token punctuation">(</span>SQL<span class="token punctuation">)</span><span class="token punctuation">;</span>       
+        <span class="token comment">//如果有数据，rs.next()返回true        </span>
+    	<span class="token keyword">while</span><span class="token punctuation">(</span>rs<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>           
+    		<span class="token comment">// 打印下結果是否满足          </span>
+    		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;用戶名：&quot;</span><span class="token operator">+</span>rs<span class="token punctuation">.</span><span class="token function">getString</span><span class="token punctuation">(</span><span class="token string">&quot;login_name&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">mybatis<span class="token punctuation">.</span>demo</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>dom4j</span><span class="token punctuation">.</span><span class="token class-name">Document</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>dom4j</span><span class="token punctuation">.</span><span class="token class-name">DocumentException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>dom4j</span><span class="token punctuation">.</span><span class="token class-name">Element</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>dom4j<span class="token punctuation">.</span>io</span><span class="token punctuation">.</span><span class="token class-name">SAXReader</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>junit</span><span class="token punctuation">.</span><span class="token class-name">Before</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">org<span class="token punctuation">.</span>junit</span><span class="token punctuation">.</span><span class="token class-name">Test</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io</span><span class="token punctuation">.</span><span class="token class-name">IOException</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io</span><span class="token punctuation">.</span><span class="token class-name">InputStream</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>sql</span><span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">Properties</span><span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 测试类V1.1
+ * @author : index
+ * @date : 2020/1/6
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyBatisTest</span> <span class="token punctuation">{</span>
+    <span class="token comment">//&lt;editor-fold desc=&quot;jdbc实现&quot;&gt;</span>
+    <span class="token keyword">static</span> <span class="token class-name">Properties</span> properties <span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token class-name">String</span> URL<span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token class-name">String</span> USER<span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token class-name">String</span> PASSWORD<span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token class-name">String</span> DRIVER_CLASS<span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token class-name">String</span> STATIC_SQL<span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token class-name">String</span> SQL<span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * {@link MyBatisTest#loadProperties(String)}
+     */</span>
+    <span class="token annotation punctuation">@Before</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">loadProperties</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        properties <span class="token operator">=</span> <span class="token function">loadProperties</span><span class="token punctuation">(</span><span class="token string">&quot;db.properties&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        URL <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;db.url&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        USER <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;db.username&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        PASSWORD  <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;db.password&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        DRIVER_CLASS <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;db.driver&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        STATIC_SQL <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;db.static.sql&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        SQL <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;db.sql&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/**
+     * 数据库地址
+     */</span>
+<span class="token comment">//    public static final String URL = &quot;jdbc:mysql://localhost:3306/db_test&quot;;</span>
+    <span class="token comment">/**
+     * 数据库帐号
+     */</span>
+<span class="token comment">//    public static final String USER = &quot;root&quot;;</span>
+    <span class="token comment">/**
+     * 数据库密码
+     */</span>
+<span class="token comment">//    public static final String PASSWORD = &quot;123456&quot;;</span>
+    <span class="token comment">/**
+     * 驱动程序名称
+     */</span>
+<span class="token comment">//    public static final String DRIVER_CLASS = &quot;com.mysql.cj.jdbc.Driver&quot;;</span>
+    <span class="token comment">/**
+     * 执行sql
+     */</span>
+<span class="token comment">//    private static final String SQL = &quot;select * from sys_user where user_id='1';&quot;;</span>
+    <span class="token comment">/**
+     * 执行sql
+     */</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> SQL_P <span class="token operator">=</span> <span class="token string">&quot;select * from sys_user where user_id=?;&quot;</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * 这是一个最简单的sql查询实现
+     */</span>
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testJdbc</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Connection</span> conn <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token class-name">Statement</span> stmt <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token class-name">ResultSet</span> rs <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token class-name">PreparedStatement</span> preparedStatement <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span><span class="token punctuation">{</span>
+            <span class="token comment">//1.加载{mysql}驱动程序</span>
+            <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forName</span><span class="token punctuation">(</span>DRIVER_CLASS<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//2. 获得数据库连接</span>
+            conn <span class="token operator">=</span> <span class="token class-name">DriverManager</span><span class="token punctuation">.</span><span class="token function">getConnection</span><span class="token punctuation">(</span>URL<span class="token punctuation">,</span> USER<span class="token punctuation">,</span> PASSWORD<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//3.操作数据库，实现增删改查</span>
+            stmt <span class="token operator">=</span> conn<span class="token punctuation">.</span><span class="token function">createStatement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            rs <span class="token operator">=</span> stmt<span class="token punctuation">.</span><span class="token function">executeQuery</span><span class="token punctuation">(</span>STATIC_SQL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//如果有数据，rs.next()返回true</span>
+            <span class="token keyword">while</span><span class="token punctuation">(</span>rs<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">// 打印下結果是否满足</span>
+                <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;用戶名：&quot;</span><span class="token operator">+</span>rs<span class="token punctuation">.</span><span class="token function">getString</span><span class="token punctuation">(</span><span class="token string">&quot;login_name&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token comment">// 定义sql语句 ?表示占位符</span>
+            <span class="token class-name">String</span> sql <span class="token operator">=</span> properties<span class="token punctuation">.</span><span class="token function">getProperty</span><span class="token punctuation">(</span><span class="token string">&quot;db.sql&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 获取预处理 statement</span>
+            preparedStatement <span class="token operator">=</span> conn<span class="token punctuation">.</span><span class="token function">prepareStatement</span><span class="token punctuation">(</span>sql<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 设置参数，第一个参数为 sql 语句中参数的序号（从 1 开始,不是0），第二个参数为设置的</span>
+            preparedStatement<span class="token punctuation">.</span><span class="token function">setString</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 向数据库发出 sql 执行查询，查询出结果集</span>
+            rs <span class="token operator">=</span> preparedStatement<span class="token punctuation">.</span><span class="token function">executeQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span><span class="token punctuation">(</span>rs<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">// 打印下結果是否满足</span>
+                <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;用戶名：&quot;</span><span class="token operator">+</span>rs<span class="token punctuation">.</span><span class="token function">getString</span><span class="token punctuation">(</span><span class="token string">&quot;login_name&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 流的关闭</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>conn <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                    conn<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">SQLException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>stmt <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                    stmt<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">SQLException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>rs <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                    rs<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">SQLException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//&lt;/editor-fold&gt;</span>
+    <span class="token comment">//&lt;editor-fold desc=&quot;测试方法&quot;&gt;</span>
+    <span class="token comment">/**
+     * 模拟配置文件（db.properties）读取
+     */</span>
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">propertiesReadTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">Properties</span> properties <span class="token operator">=</span> <span class="token function">loadProperties</span><span class="token punctuation">(</span><span class="token string">&quot;db.properties&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>properties<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//{db.driver=com.mysql.cj.jdbc.Driver, db.password=123456, db.username=root, db.sql=select * from sys_user where user_id = ?;, db.url=jdbc:mysql://localhost:3306/db_test}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//&lt;/editor-fold&gt;</span>
+    <span class="token comment">//&lt;editor-fold desc=&quot;工具方法&quot;&gt;</span>
+    <span class="token comment">/**
+     * 配置文件Properties读方法类
+     * @param path
+     * @return
+     */</span>
+    <span class="token keyword">private</span> <span class="token class-name">Properties</span> <span class="token function">loadProperties</span><span class="token punctuation">(</span><span class="token class-name">String</span> path<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Properties</span> properties <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Properties</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token class-name">InputStream</span> inputStream <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getResourceAsStream</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>inputStream<span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                properties<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>inputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> properties<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/**
+     * 文档流的读取
+     * @param inputStream
+     * @return
+     */</span>
+    <span class="token keyword">private</span> <span class="token class-name">Document</span> <span class="token function">readDocument</span><span class="token punctuation">(</span><span class="token class-name">InputStream</span> inputStream<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">SAXReader</span> saxReader <span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">SAXReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> saxReader<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>inputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">DocumentException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//&lt;editor-fold desc=&quot;配置参数读取&quot;&gt;</span>
+    <span class="token comment">//&lt;/editor-fold&gt;</span>
+    <span class="token comment">//&lt;/editor-fold&gt;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="_2-2-源码分析"><a href="#_2-2-源码分析" class="header-anchor">#</a> 2.2.源码分析</h2> <h3 id="_2-2-1整体了解结构（参考前辈们，减少支出，减少错误1）"><a href="#_2-2-1整体了解结构（参考前辈们，减少支出，减少错误1）" class="header-anchor">#</a> 2.2.1整体了解结构（参考前辈们，减少支出，减少错误1）</h3> <p>三层结构 (参考芋道源码）：</p> <p>​	<a href="#%E6%8E%A5%E5%8F%A3%E5%B1%82">接口层</a>，其核心是 SqlSession 接口，该接口中定义了 MyBatis 暴露给应用程序调用的 API，也就是上层应用与 MyBatis 交互的桥梁。接口层在接收到调用请求时，会调用核心处理层的相应模块来完成具体的数据库操作。</p> <p>​	<a href="#%E6%A0%B8%E5%BF%83%E5%A4%84%E7%90%86%E5%B1%82">核心处理层</a>，实现了 MyBatis 的核心处理流程，其中包括 MyBatis 的<strong>初始化</strong>以及完成一次<strong>数据库操作</strong>的涉及的全部流程</p> <p>​	<a href="#%E5%9F%BA%E7%A1%80%E6%94%AF%E6%92%91%E5%B1%82">基础支撑层</a>，包含整个 MyBatis 的基础模块，这些模块为核心处理层的功能提供了良好的支撑</p> <table><tr><th>层级</th> <th colspan="5">内容</th></tr> <tr><td rowspan="1">接口层</td> <td>SqlSession</td> <td></td> <td></td> <td></td> <td></td></tr> <tr><td rowspan="2">核心处理层</td> <td>配置解析</td> <td>参数映射</td> <td>SQL解析</td> <td></td> <td></td></tr> <tr><td>SQL执行</td> <td>结果集映射</td> <td>插件</td> <td></td> <td></td></tr> <tr><td rowspan="2">基础支持层</td> <td>数据源模块</td> <td>事务管理模块</td> <td>缓存模块</td> <td>Binding模块</td> <td></td></tr> <tr><td>反射模块</td> <td>类型模块</td> <td>日志模块</td> <td>资源加载</td> <td>解析器模块</td></tr></table> <table><thead><tr><th>模块</th> <th>层级</th> <th>定义</th></tr></thead> <tbody><tr><td>session</td> <td>接口层</td> <td>会话模块</td></tr> <tr><td>mapping</td> <td>核心处理层</td> <td>映射</td></tr> <tr><td>builder</td> <td>核心处理层</td> <td>配置解析</td></tr> <tr><td>scripting</td> <td>核心处理层</td> <td>SQL解析</td></tr> <tr><td>plugin</td> <td>核心处理层</td> <td>插件模块</td></tr> <tr><td>cursor</td> <td>核心处理层</td> <td>游标模块</td></tr> <tr><td>executor</td> <td>核心处理层</td> <td>SQL执行模块</td></tr> <tr><td>datasource</td> <td>基础支持层</td> <td>数据源模块</td></tr> <tr><td>transaction</td> <td>基础支持层</td> <td>事务模块</td></tr> <tr><td>cache</td> <td>基础支持层</td> <td>缓存模块</td></tr> <tr><td>parsing</td> <td>基础支持层</td> <td>解析器模块</td></tr> <tr><td>reflection</td> <td>基础支持层</td> <td>反射模块</td></tr> <tr><td>logging</td> <td>基础支持层</td> <td>日志模块</td></tr> <tr><td>binding</td> <td>基础支持层</td> <td>Binding模块</td></tr> <tr><td>io</td> <td>基础支持层</td> <td>资源加载模块</td></tr> <tr><td>type</td> <td>基础支持层</td> <td>类型转化模块</td></tr> <tr><td>annotations</td> <td>基础支持层</td> <td>注解模块</td></tr> <tr><td>exceptions</td> <td>基础支持层</td> <td>异常模块</td></tr> <tr><td>jdbc</td> <td>其他</td> <td>JDBC模块</td></tr> <tr><td>lang</td> <td>其他</td> <td>Lang模块</td></tr></tbody></table> <h3 id="_2-2-2整体模型"><a href="#_2-2-2整体模型" class="header-anchor">#</a> 2.2.2整体模型</h3> <p>整体过程图简单如下（ps:markdown的图画的有点诡异，讲究看哈哈哈）</p> <div class="language-mermaid extra-class"><pre class="language-text"><code>graph TB
+A[SqlSession]
+B[Executor]
+C[StatementHandler]
+D&gt;ParameterHandler]
+E&gt;Statement]
+F((数据库DB))
+G&gt;ResultSet]
+H&gt;ResultHandler]
+I{{被依赖:其他模块:缓存模块,事务模块...}}
+A--&gt;B--&gt;C--&gt;D--&gt;E--&gt;F-.-&gt;G-.-&gt;H-.-&gt;C-.-&gt;B-.-&gt;A
+
+
+</code></pre></div><h3 id="_2-2-3-接口层"><a href="#_2-2-3-接口层" class="header-anchor">#</a> 2.2.3 接口层</h3> <p>对应 <font color="red"><code>session</code></font>模块</p> <p>接口层相对简单，其核心是 SqlSession 接口，该接口中定义了 MyBatis 暴露给应用程序调用的 API，也就是上层应用与 MyBatis 交互的桥梁。接口层在接收到调用请求时，会调用核心处理层的相应模块来完成具体的数据库操作。</p> <p><img src="D:%5CINDEX_SHAO%5Cvuepress%5Cdocs.vuepress%5Cdist%5Cimg%5Cmybatis%5Cmybatis-sqlsession%E5%B1%82.png" alt="image-20200113223945158"></p> <h3 id="_2-2-4-核心处理层"><a href="#_2-2-4-核心处理层" class="header-anchor">#</a> 2.2.4 核心处理层</h3> <p>在核心处理层中，实现了 MyBatis 的核心处理流程，其中包括 MyBatis 的<strong>初始化</strong>以及完成一次<strong>数据库操作</strong>的涉及的全部流程 。</p> <h4 id="_2-2-4-1-配置解析"><a href="#_2-2-4-1-配置解析" class="header-anchor">#</a> 2.2.4.1 配置解析</h4> <p>对应 <code>builder</code> 和 <code>mapping</code> 模块。前者为配置<strong>解析过程</strong>，后者主要为 SQL 操作解析后的<strong>映射</strong>。</p> <blockquote><p>在 MyBatis 初始化过程中，会加载 <code>mybatis-config.xml</code> 配置文件、映射配置文件以及 Mapper 接口中的注解信息，解析后的配置信息会形成相应的对象并保存到 Configuration 对象中。例如：</p> <ul><li><code>&lt;resultMap&gt;</code>节点(即 ResultSet 的映射规则) 会被解析成 ResultMap 对象。</li> <li><code>&lt;result&gt;</code>节点(即属性映射)会被解析成 ResultMapping 对象。</li></ul> <p>之后，利用该 Configuration 对象创建 SqlSessionFactory对象。待 MyBatis 初始化之后，开发人员可以通过初始化得到 SqlSessionFactory 创建 SqlSession 对象并完成数据库操作。</p></blockquote> <h4 id="_2-2-4-2-sql-解析"><a href="#_2-2-4-2-sql-解析" class="header-anchor">#</a> 2.2.4.2 SQL 解析</h4> <p>对应 <code>scripting</code> 模块。</p> <blockquote><p>拼凑 SQL 语句是一件烦琐且易出错的过程，为了将开发人员从这项枯燥无趣的工作中 解脱出来，MyBatis 实现<strong>动态 SQL 语句</strong>的功能，提供了多种动态 SQL语句对应的节点。例如 <code>&lt;where&gt;</code>节点、<code>&lt;if&gt;</code> 节点、<code>&lt;foreach&gt;</code> 节点等。通过这些节点的组合使用， 开发人员可以写出几乎满足所有需求的动态 SQL 语句。</p> <p>MyBatis 中的 <code>scripting</code> 模块，会根据用户传入的实参，解析映射文件中定义的动态 SQL 节点，并形成数据库可执行的 SQL 语句。之后会处理 SQL 语句中的占位符，绑定用户传入的实参。</p> <p><font color="red">ps:对于解析#{}，${}的解析</font></p></blockquote> <h4 id="_2-2-4-3-sql-执行"><a href="#_2-2-4-3-sql-执行" class="header-anchor">#</a> 2.2.4.3 SQL 执行</h4> <p>对应 <code>executor</code> 和 <code>cursor</code> 模块。前者对应<strong>执行器</strong>，后者对应执行<strong>结果的游标</strong>.</p> <blockquote><p>SQL 语句的执行涉及多个组件 ，其中比较重要的是 Executor、StatementHandler、ParameterHandler 和 ResultSetHandler .</p> <ul><li><strong>Executor</strong> 主要负责维护一级缓存和二级缓存，并提供事务管理的相关操作，它会将数据库相关操作委托给 StatementHandler完成。</li> <li><strong>StatementHandler</strong> 首先通过 <strong>ParameterHandler</strong> 完成 SQL 语句的实参绑定，然后通过 <code>java.sql.Statement</code> 对象执行 SQL 语句并得到结果集，最后通过 <strong>ResultSetHandler</strong> 完成结果集的映射，得到结果对象并返回。</li></ul></blockquote> <h4 id="_2-2-4-4插件层"><a href="#_2-2-4-4插件层" class="header-anchor">#</a> 2.2.4.4插件层</h4> <p>对应 <code>plugin</code> 模块。</p> <blockquote><p>Mybatis 自身的功能虽然强大，但是并不能完美切合所有的应用场景，因此 MyBatis 提供了插件接口，我们可以通过添加用户自定义插件的方式对 MyBatis 进行扩展。用户自定义插件也可以改变 Mybatis 的默认行为，例如，我们可以拦截 SQL 语句并对其进行重写。</p></blockquote> <h3 id="_2-2-5-基础支持层"><a href="#_2-2-5-基础支持层" class="header-anchor">#</a> 2.2.5 基础支持层</h3> <p>未完待续...</p> <blockquote><p>先搞个blog记录下</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/24/2020, 12:40:36 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/backend/spring.html">spring学习</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.fe2b8134.js" defer></script><script src="/assets/js/2.fd8391b5.js" defer></script><script src="/assets/js/7.70799840.js" defer></script>
+  </body>
+</html>
